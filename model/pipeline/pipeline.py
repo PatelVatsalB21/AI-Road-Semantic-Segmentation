@@ -14,8 +14,8 @@ def process_data():
     print("process_data")
     input_images = []
     mask_images = []
-    image_path = "../input/lyft-udacity-challenge/dataA/dataA/CameraRGB/"
-    mask_path = "../input/lyft-udacity-challenge/dataA/dataA/CameraSeg/"
+    image_path = "../data/CameraRGB/"
+    mask_path = "../data/CameraSeg/"
     image_list = os.listdir(image_path)
     mask_list = os.listdir(mask_path)
     image_list = [image_path + i for i in image_list]
