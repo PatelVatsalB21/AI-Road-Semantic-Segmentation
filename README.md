@@ -8,6 +8,12 @@
 
 Image segmentation is a computer vision task in which we label specific regions of an image according to what's being shown. The goal of Semantic Image Segmentation is to label each pixel of an image with a corresponding class of what is being represented. Because we're predicting for every pixel in the image, this task is commonly referred to as dense prediction. We only care about the category of each pixel i.e. if you have two objects of the same category in your input image, the segmentation map does not inherently distinguish these as separate objects.
 
+
+## Dataset
+
+The dataset used for Semantic Segmantation of Road is available on Kaggle. It is a free and open-source dataset with 10000 images taken from CARLA Simulator. The dataset is divided in two parts of 5000 images each, one for RGB images and other for Segmentated images(output). The segmentated images are pixel labelled images and have 13 categories each for different objects(e.g. cars, buildings, road). The size of whole dataset is around 5GB and available to download from [here](https://www.kaggle.com/kumaresanmanickavelu/lyft-udacity-challenge).
+
+
 ## Model Overview
 
 The basic structure of semantic segmentation models is based on the U-Net model. U-Net structure is as shown in the image below:
