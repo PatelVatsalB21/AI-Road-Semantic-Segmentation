@@ -28,7 +28,7 @@ def process_data():
         x = [i + j for j in x]
         image_list = image_list + x
 
-    for i in list1:
+    for i in list2:
         x = os.listdir(i)
         x = [i + j for j in x]
         mask_list = mask_list + x

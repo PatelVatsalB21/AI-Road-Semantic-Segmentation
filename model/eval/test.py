@@ -36,7 +36,16 @@ for i in range(13):
             if prediction[0, j, k, i] > 0.5:
                 result[j, k] = i
 
-plt.imshow(test, result)
-plt.imshow(test,truth)
+# plt.imshow(test, result)
+# plt.imshow(test, truth)
+def plotter(img,mask):
+    fig,axes=plt.subplots(1,2)
+    axes[0].imshow(img)
+    plt.imshow(mask)
+    plt.show()
 
+
+# plotter(test,result)
+plt.imshow(result, cmap="Paired")
+plotter(test,mask_images[5])
 
