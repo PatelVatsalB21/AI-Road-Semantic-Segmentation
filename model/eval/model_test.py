@@ -32,6 +32,6 @@ def plotter(img, mask):
     plt.show()
 
 
-plotter(test, result)
+plotter(test, newImg)
 plotter(test, mask_images[index])
-plt.imshow(result, cmap="Paired")
+plt.imshow(newImg, cmap="Paired")
