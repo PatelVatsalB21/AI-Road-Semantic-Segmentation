@@ -41,7 +41,7 @@ def get_model():
         x = keras.layers.add([x, residual])
         previous_block_activation = x
 
-    outputs = Conv2D(num_classes, 3, activation="sigmoid", padding="same")(x)
+    outputs = Conv2D(13, 3, activation="softmax", padding="same")(x)
 
     return Model(inputs=[inputs], outputs=[outputs])
 
